@@ -31,6 +31,15 @@
 			<groupId>com.alibaba.itu</groupId>
 			<artifactId>imt</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>velocity</groupId>
+			<artifactId>velocity</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>commons-collections</groupId>
+			<artifactId>commons-collections</artifactId>
+			<version>3.1</version>
+		</dependency>
   </dependencies>
   
   <build>

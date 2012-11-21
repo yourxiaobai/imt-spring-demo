@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		#set($loginUser = $model.loginUser)
+		$loginUser
+		#set($iil = $model.iil)
+		<table>
+		#foreach($ii in $iil)
+			<tr>
+				<td>$ii.methodName</td>
+			</tr>
+		#end
+			
+		</table>
+	</body>
+</html>
