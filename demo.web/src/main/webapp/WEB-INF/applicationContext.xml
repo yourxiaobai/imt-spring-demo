@@ -11,9 +11,9 @@
 
 	<context:component-scan base-package="com.bys" />
 	<imt:imt id="imt">
-		<imt:annotation-scan-pkgs>
-			<imt:pkg>com.bys.facade</imt:pkg>
-		</imt:annotation-scan-pkgs>
+		<imt:annotation-scan-paths>
+			<imt:path>classpath*:com.bys.facade.*</imt:path>
+		</imt:annotation-scan-paths>
 		
 	</imt:imt>
 	
