@@ -32,9 +32,11 @@
 			<artifactId>imt</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>com.alibaba.external</groupId>
-			<artifactId>jakarta.velocity</artifactId>
-		</dependency>
+			<groupId>org.apache.velocity</groupId>
+				<artifactId>velocity</artifactId>
+					<!-- <groupId>com.alibaba.external</groupId>
+					<artifactId>jakarta.velocity</artifactId> -->
+			</dependency>
 	</dependencies>
 
 
