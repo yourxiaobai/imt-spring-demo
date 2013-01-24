@@ -10,11 +10,13 @@
 							             http://repo.alibaba-inc.com/schema/imt					http://repo.alibaba-inc.com/schema/imt/imt.xsd">
 
 	<context:component-scan base-package="com.bys" />
+	
 	<imt:imt id="imt">
+		<imt:privilege ref="demoPrivilege"/>
 		<imt:annotation-scan-paths>
 			<imt:path>classpath*:com.bys.facade.*</imt:path>
 		</imt:annotation-scan-paths>
-		
 	</imt:imt>
 	
+	<bean id="demoPrivilege" class="com.bys.privilege.DemoPrivilege"></bean>
 </beans>

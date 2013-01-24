@@ -13,7 +13,7 @@
 			<artifactId>spring-context</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>com.alibaba.itu</groupId>
+			<groupId>com.alibaba.itu.shared</groupId>
 			<artifactId>imt</artifactId>
 		</dependency>
 	</dependencies>

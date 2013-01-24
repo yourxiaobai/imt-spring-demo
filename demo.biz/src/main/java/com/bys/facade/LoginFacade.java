@@ -32,9 +32,14 @@ public class LoginFacade {
 
     @Autowired
     private LoginService loginService;
-    @Interface(datas = "登录接口")
+    @Interface(datas = { "data mi test","product","Data Migration","correct trade data","" })
     public String doLogin(String userName){
         return loginService.doLogin(userName);
         
+    }
+    
+    @Interface(datas = { "很好和好","product","中文测试","import trade data","" })
+    public String doLogin2(String userName){
+        return loginService.doLogin(userName);
     }
 }

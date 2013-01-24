@@ -13,10 +13,30 @@
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
 	</servlet>
 	
+	<servlet>
+		<servlet-name>imt</servlet-name>
+		<servlet-class>com.alibaba.imt.web.servlet.ImtServlet</servlet-class>
+	</servlet>
+	
+	<filter>
+		<filter-name>imtFilter</filter-name>
+		<filter-class>com.alibaba.imt.web.servlet.ImtFilter</filter-class>
+	</filter>
+	
+    <servlet-mapping>
+		<servlet-name>imt</servlet-name>
+		<url-pattern>/imt/ImtServlet</url-pattern>
+	</servlet-mapping>
+	
 	<servlet-mapping>
 		<servlet-name>imt-spring-demo</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
+	
+	<filter-mapping>
+		<filter-name>imtFilter</filter-name>
+		<url-pattern>/imt/ImtFilter</url-pattern>
+	</filter-mapping>
 	
 	<welcome-file-list>
 		<welcome-file>index.jsp</welcome-file>
